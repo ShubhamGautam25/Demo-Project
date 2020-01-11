@@ -1,431 +1,482 @@
-<div class="wrapper">
-  <div class="box">
-    <div class="row row-offcanvas row-offcanvas-left">
+<div class="canvas">
+  <div class="wrapper">
+    <div class="box">
+      <div class="row row-offcanvas row-offcanvas-left">
+        <div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
+          <ul class="nav hidden-xs" id="lg-menu">
+            <li class="active">
+              <a href="#featured"
+                ><i class="fa fa-address-card" aria-hidden="true"></i>
+                Tineline</a
+              >
+            </li>
+            <li>
+              <a href="#stories"
+                ><i class="fa fa-users" aria-hidden="true"></i>Friends</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-comments" aria-hidden="true"></i>Messages</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-bell"></i> Notifications</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-picture-o" aria-hidden="true"></i> Photo/Video
+                Album</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-info-circle"></i> About</a>
+            </li>
+          </ul>
+          <ul class="nav visible-xs" id="xs-menu">
+            <li>
+              <a href="#featured" class="text-center"
+                ><i class="fa fa-address-card"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#stories" class="text-center"
+                ><i class="fa fa-users"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-center"><i class="fa fa-comments"></i></a>
+            </li>
+            <li>
+              <a href="#" class="text-center"><i class="fa fa-bell"></i></a>
+            </li>
+            <li>
+              <a href="#" class="text-center"
+                ><i class="fa fa-picture-o"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-center"
+                ><i class="fa fa-info-circle"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="column col-sm-10 col-xs-11" id="main">
+          <div class="navbar navbar-blue navbar-static-top">
+            <div class="navbar-header"></div>
+            <nav class="collapse navbar-collapse" role="navigation">
+              <form class="navbar-form navbar-left">
+                <div
+                  class="input-group input-group-sm"
+                  style="max-width:360px;"
+                >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search"
+                    name="srch-term"
+                    id="srch-term"
+                  />
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
 
-
-      <!-- sidebar -->
-      <div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
-
-        <!-- <ul class="nav">
-          <li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i
-                class="glyphicon glyphicon-chevron-right"></i></a></li>
-        </ul> -->
-
-        <ul class="nav hidden-xs" id="lg-menu">
-          <li class="active"><a href="#featured"><i class="fa fa-address-card" aria-hidden="true"></i> Tineline</a></li>
-          <li><a href="#stories"><i class="fa fa-users" aria-hidden="true"></i>Friends</a></li>
-          <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>Messages</a></li>
-          <li><a href="#"><i class="fa fa-bell"></i> Notifications</a></li>
-          <li><a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i> Photo/Video Album</a></li>
-          <li><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
-
-
-        </ul>
-
-
-        <!-- tiny only nav-->
-        <ul class="nav visible-xs" id="xs-menu">
-          <li><a href="#featured" class="text-center"><i class="fa fa-address-card"></i></a></li>
-          <li><a href="#stories" class="text-center"><i class="fa fa-users"></i></a></li>
-          <li><a href="#" class="text-center"><i class="fa fa-comments"></i></a></li>
-          <li><a href="#" class="text-center"><i class="fa fa-bell"></i></a></li>
-          <li><a href="#" class="text-center"><i class="fa fa-picture-o"></i></a></li>
-          <li><a href="#" class="text-center"><i class="fa fa-info-circle"></i></a></li>
-
-
-        </ul>
-
-      </div>
-      <!-- /sidebar -->
-
-      <!-- main right col -->
-      <div class="column col-sm-10 col-xs-11" id="main">
-
-        <!-- top nav -->
-        <div class="navbar navbar-blue navbar-static-top">
-          <div class="navbar-header">
-            <!-- <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button> -->
-            <!-- <a href="/" class="navbar-brand logo">b</a> -->
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="">More</a></li>
+                    <li><a href="">More</a></li>
+                    <li><a href="">More</a></li>
+                    <li><a href="">More</a></li>
+                    <li><a href="">More</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="collapse navbar-collapse" role="navigation">
-            <form class="navbar-form navbar-left">
-              <div class="input-group input-group-sm" style="max-width:360px;">
-                <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-                <div class="input-group-btn">
-                  <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          <div class="main-container">
+            <div class="col-sm-10">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <img
+                    src="../assets/images/top-banner.jpg"
+                    class="top-banner"
+                  />
+
+                  <img
+                    src="../assets/images/the-gifted-amy-acker-02.jpg"
+                    class="img-circle profile-photo"
+                  />
+                </div>
+                <div class="bottom-container">
+                  <ul>
+                    <li><a href="#">William James</a></li>
+                    <li><a class="active" href="#">Timeline</a></li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                      <a href="#">Friedns <small>(2192)</small></a>
+                    </li>
+                    <li>
+                      <a href="#">Photos <small>(300)</small></a>
+                    </li>
+                    <li style="float:right">
+                      <button class="btn btn-default" type="submit">
+                        <i class="fa fa-pencil" aria-hidden="true"> </i> Edit
+                        Profile
+                      </button>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </form>
-            <!-- <ul class="nav navbar-nav">
-                    <li>
-                      <a href="#"><i class="glyphicon glyphicon-home"></i> Home</a>
-                    </li>
-                    <li>
-                      <a href="#postModal" role="button" data-toggle="modal"><i class="glyphicon glyphicon-plus"></i> Post</a>
-                    </li>
-                    <li>
-                      <a href="#"><span class="badge">badge</span></a>
-                    </li>
-                  </ul> -->
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <!-- <i class="glyphicon glyphicon-user"></i> -->
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="">More</a></li>
-                  <li><a href="">More</a></li>
-                  <li><a href="">More</a></li>
-                  <li><a href="">More</a></li>
-                  <li><a href="">More</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <!-- /top nav -->
-        <div class="main-container">
-          <div class="col-sm-10">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <!-- <img src="top-banner" class="img-circle pull-right"> <a href="#">Keyword: Bootstrap</a>
-                     <div class="clearfix"></div>
-                     <hr>
-                     
-                     <p>If you're looking for help with Bootstrap code, the <code>twitter-bootstrap</code> tag at <a href="http://stackoverflow.com/questions/tagged/twitter-bootstrap">Stackoverflow</a> is a good place to find answers.</p>
-                     
-                     <hr>
-                     <form>
-                     <div class="input-group">
-                       <div class="input-group-btn">
-                       <button class="btn btn-default">+1</button><button class="btn btn-default"><i class="glyphicon glyphicon-share"></i></button>
-                       </div>
-                       <input type="text" class="form-control" placeholder="Add a comment..">
-                     </div>
-                     </form> -->
-                <img src="../assets/images/top-banner.jpg" class="top-banner">
 
-                <img src="../assets/images/the-gifted-amy-acker-02.jpg" class="img-circle profile-photo">
-              </div>
-              <div class="panel-heading"><a href="#" class="pull-right">View all</a></div>
+              <div class="row">
+                <div class="col-sm-3 center-left-section">
+                  <div class="panel panel-default">
+                    <div class="list-group">
+                      <a
+                        href="http://bootply.com/tagged/modal"
+                        class="list-group-item"
+                      >
+                        <p class="lead">Bio</p>
+                        <p>45 Followers, 13 Posts</p>
+                      </a>
+                      <a
+                        href="http://bootply.com/tagged/datetime"
+                        class="list-group-item"
+                      >
+                        <p class="lead">Work</p>
+                        <p>45 Followers, 13 Posts</p>
+                      </a>
+                      <a
+                        href="http://bootply.com/tagged/datatable"
+                        class="list-group-item"
+                      >
+                        <p class="lead">Address</p>
+                        <p>45 Followers, 13 Posts</p>
+                      </a>
+                      <a
+                        href="http://bootply.com/tagged/datatable"
+                        class="list-group-item"
+                      >
+                        <p class="lead">Birthday</p>
+                        <p>45 Followers, 13 Posts</p>
+                      </a>
+                    </div>
+                    <!-- </div> -->
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h6>300 PHOTOS</h6>
+                    </div>
+                    <div class="photo-panel-body">
+                      <div class="photo-collection">
+                        <div class="row1">
+                          <img src="../assets/images/images (1).jfif" />
+                          <img
+                            src="../assets/images/PLHIV Young person female_0.webp"
+                          />
+                        </div>
+                        <div class="row1">
+                          <img src="../assets/images/images (1).jfif" />
+                          <img
+                            src="../assets/images/PLHIV Young person female_0.webp"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-            </div>
-
-            <!-- content -->
-            <div class="row">
-
-              <!-- main col left -->
-              <div class="col-sm-3 center-left-section">
-
-                <!-- <div class="panel panel-heading panel-default">
-                              <div class="panel-body">
-                                <p class="lead">Bio</p>
-                                <p>45 Followers, 13 Posts</p>
-                              </div>
-                            </div>
-                            <div class="panel panel-heading panel-default">
-                              <div class="panel-body">
-                                <p class="lead">Work</p>
-                                <p>45 Followers, 13 Posts</p>
-                              </div>
-                            </div>
-                            <div class="panel panel-heading panel-default">
-                              <div class="panel-body">
-                                <p class="lead">Address</p>
-                                <p>45 Followers, 13 Posts</p>
-                              </div>
-                            </div>
-                            <div class="panel panel-heading panel-default">
-                              <div class="panel-body">
-                                <p class="lead">Birthday</p>
-                                <p>45 Followers, 13 Posts</p>
-                              </div>
-                            </div> -->
-                <div class="panel panel-default">
-                  <!-- <div class="panel-heading">
-                                <a href="#" class="pull-right">View all</a> <h4>Bootstrap Examples</h4>
-                              </div> -->
-                  <!-- <div class="panel-body"> -->
-                  <div class="list-group">
-                    <a href="http://bootply.com/tagged/modal" class="list-group-item">
+                <!-- main col right -->
+                <div class="col-sm-6 center-mid-section">
+                  <div class="update-status-section">
+                    <div class="update-status">
+                      <img
+                        src="../assets/images/PLHIV Young person female_0.webp"
+                        class="img-circle"
+                      />
+                      <textarea
+                        class="form-control"
+                        placeholder="What's in your mind?"
+                      ></textarea>
+                    </div>
+                    <div class="update-status-bottom">
+                      <button class="btn btn-primary pull-right" type="button">
+                        Post
+                      </button>
+                      <ul class="list-inline">
+                        <li>
+                          <a href=""
+                            ><i class="fa fa-picture-o" aria-hidden="true"></i>
+                            Photo/Video Album</a
+                          >
+                        </li>
+                        <li><a href="">😍 Feeling/Activity</a></li>
+                        <li>
+                          <a href=""
+                            ><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            Location</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="update-post-section">
+                    <div class="update-post-logo-img">
+                      <img
+                        src="../assets/images/PLHIV Young person female_0.webp"
+                        class="img-circle"
+                      />
                       <p class="lead">Bio</p>
                       <p>45 Followers, 13 Posts</p>
-                    </a>
-                    <a href="http://bootply.com/tagged/datetime" class="list-group-item">
-                      <p class="lead">Work</p>
-                      <p>45 Followers, 13 Posts</p>
-                    </a>
-                    <a href="http://bootply.com/tagged/datatable" class="list-group-item">
-                      <p class="lead">Address</p>
-                      <p>45 Followers, 13 Posts</p>
-                    </a>
-                    <a href="http://bootply.com/tagged/datatable" class="list-group-item">
-                      <p class="lead">Birthday</p>
-                      <p>45 Followers, 13 Posts</p>
-                    </a>
-                  </div>
-                  <!-- </div> -->
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h6>300 PHOTOS</h6>
-                  </div>
-                  <div class="photo-panel-body">
-                    <div class="photo-collection">
-                      <div class="row">
-                        <img src="../assets/images/images (1).jfif">
-                        <img src="../assets/images/PLHIV Young person female_0.webp">
-                      </div>
-                      <div class="row">
-                        <img src="../assets/images/images (1).jfif">
-                        <img src="../assets/images/PLHIV Young person female_0.webp">
-                      </div>
+                      <a href="#" class="pull-right">...</a>
+                    </div>
+                    <div class="update-post-img">
+                      <img
+                        src="../assets/images/PLHIV Young person female_0.webp"
+                      />
+                      <hr />
+                      <p>
+                        <b
+                          >No metter how a person strong you are there is always
+                          someone whon can make you weak
+                          <a href="#">@Jacobelijah</a></b
+                        >
+                      </p>
+                      <p>
+                        No metter how a person strong you are there is always.
+                      </p>
+                      <hr />
+                    </div>
+
+                    <div class="update-status-bottom">
+                      <button class="btn btn-primary pull-right" type="button">
+                        Post
+                      </button>
+                      <ul class="list-inline">
+                        <li>
+                          <a href=""
+                            ><i class="fa fa-picture-o" aria-hidden="true"></i
+                            >Photo/Video Album</a
+                          >
+                        </li>
+                        <li>
+                          <a href=""
+                            ><i class="glyphicon glyphicon-upload"></i
+                            >Feeling/Activity</a
+                          >
+                        </li>
+                        <li>
+                          <a href=""
+                            ><i class="fa fa-map-marker" aria-hidden="true"></i
+                            >Location</a
+                          >
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-
-
-
-              </div>
-
-              <!-- main col right -->
-              <div class="col-sm-6 center-mid-section">
-                <div class="well">
-                  <form class="form-horizontal" role="form">
-                    <!-- <h4>What's New</h4> -->
-                    <div class="form-group" style="padding:14px;">
-                      <textarea class="form-control" placeholder="Update your status"></textarea>
-                    </div>
-                    <button class="btn btn-primary pull-right" type="button">Post</button>
-                    <ul class="list-inline">
-                      <li><a href=""><i class="fa fa-picture-o" aria-hidden="true"></i>Photo/Video Album</a></li>
-                      <li><a href=""><i class="glyphicon glyphicon-upload"></i>Feeling/Activity</a></li>
-                      <li><a href=""><i class="fa fa-map-marker" aria-hidden="true"></i>Location</a></li>
-                    </ul>
-                  </form>
-                </div>
-
-                <!-- <div class="well"> 
-                                 <form class="form">
-                                  <h4>Sign-up</h4>
-                                  <div class="input-group text-center">
-                                  <input type="text" class="form-control input-lg" placeholder="Enter your email address">
-                                    <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button">OK</button></span>
-                                  </div>
-                                </form>
-                              </div> -->
-
-                <div class="panel panel-default">
-                  <div class="panel-heading"><a href="#" class="pull-right">View all</a>
-                    <h4>Bootply Editor &amp; Code Library</h4>
+                <div class="col-sm-3 center-right-section">
+                  <div class="add-section">
+                    <img src="../assets/images/add_img.webp" />
                   </div>
-                  <div class="panel-body">
-                    <!-- <p><img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#">The Bootstrap Playground</a></p> -->
-                    <div class="clearfix"></div>
-                    <hr>
-                    Design, build, test, and prototype using Bootstrap in real-time from your Web browser. Bootply
-                    combines the power of hand-coded HTML, CSS and JavaScript with the benefits of responsive design
-                    using Bootstrap. Find and showcase Bootstrap-ready snippets in the 100% free Bootply.com code
-                    repository.
-                  </div>
-                </div>
-
-                <div class="panel panel-default">
-                  <div class="panel-heading"><a href="#" class="pull-right">View all</a>
-                    <h4>Stackoverflow</h4>
-                  </div>
-                  <div class="panel-body">
-                    <!-- <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#">Keyword: Bootstrap</a> -->
-                    <div class="clearfix"></div>
-                    <hr>
-
-                    <p>If you're looking for help with Bootstrap code, the <code>twitter-bootstrap</code> tag at <a
-                        href="http://stackoverflow.com/questions/tagged/twitter-bootstrap">Stackoverflow</a> is a good
-                      place to find answers.</p>
-
-                    <hr>
-                    <form>
-                      <div class="input-group">
-                        <div class="input-group-btn">
-                          <button class="btn btn-default">+1</button><button class="btn btn-default"><i
-                              class="glyphicon glyphicon-share"></i></button>
+                  <div class="panel panel-default">
+                    <div class="list-group">
+                      <div class="list-group-item suggested-friend-list">
+                        <div class="suggested-friend">
+                          <img
+                            src="../assets/images/PLHIV Young person female_0.webp"
+                            class="img-circle"
+                          />
+                          <p>Bio</p>
+                          <button
+                            class="btn btn-primary btn-sm pull-right"
+                            data-dismiss="modal"
+                            aria-hidden="true"
+                          >
+                            Friend
+                          </button>
                         </div>
-                        <input type="text" class="form-control" placeholder="Add a comment..">
-                      </div>
-                    </form>
+                        <div class="suggested-friend">
+                          <img
+                            src="../assets/images/PLHIV Young person female_0.webp"
+                            class="img-circle"
+                          />
+                          <p>Bio</p>
+                          <button
+                            class="btn btn-primary btn-sm pull-right"
+                            data-dismiss="modal"
+                            aria-hidden="true"
+                          >
+                            Friend
+                          </button>
+                        </div>
 
-                  </div>
-                </div>
-
-                <div class="panel panel-default">
-                  <div class="panel-heading"><a href="#" class="pull-right">View all</a>
-                    <h4>Portlet Heading</h4>
-                  </div>
-                  <div class="panel-body">
-                    <ul class="list-group">
-                      <li class="list-group-item">Modals</li>
-                      <li class="list-group-item">Sliders / Carousel</li>
-                      <li class="list-group-item">Thumbnails</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <!-- <div class="panel panel-default">
-                  <div class="panel-thumbnail"><img src="/assets/example/bg_4.jpg" class="img-responsive"></div>
-                  <div class="panel-body">
-                    <p class="lead">Social Good</p>
-                    <p>1,200 Followers, 83 Posts</p>
-
-                    <p>
-                      <img
-                        src="https://lh6.googleusercontent.com/-5cTTMHjjnzs/AAAAAAAAAAI/AAAAAAAAAFk/vgza68M4p2s/s28-c-k-no/photo.jpg"
-                        width="28px" height="28px">
-                      <img
-                        src="https://lh4.googleusercontent.com/-6aFMDiaLg5M/AAAAAAAAAAI/AAAAAAAABdM/XjnG8z60Ug0/s28-c-k-no/photo.jpg"
-                        width="28px" height="28px">
-                      <img
-                        src="https://lh4.googleusercontent.com/-9Yw2jNffJlE/AAAAAAAAAAI/AAAAAAAAAAA/u3WcFXvK-g8/s28-c-k-no/photo.jpg"
-                        width="28px" height="28px">
-                    </p>
-                  </div>
-                </div> -->
-
-              </div>
-              <div class="col-sm-3 center-right-section">
-                <div class="add-section">
-                  <img src="../assets/images/add_img.webp">
-                </div>
-                <div class="panel panel-default">
-                  <!-- <div class="panel-heading">
-                              <a href="#" class="pull-right">View all</a> <h4>Bootstrap Examples</h4>
-                            </div> -->
-                  <!-- <div class="panel-body"> -->
-                  <div class="list-group">
-                    <div class="list-group-item suggested-friend-list">
-                      <div class="suggested-friend">
-                        <img src="../assets/images/PLHIV Young person female_0.webp" class="img-circle">
-                        <p>Bio</p>
-                        <!-- <p>45 Followers</p> -->
-                        <button class="btn btn-primary btn-sm pull-right" data-dismiss="modal"
-                          aria-hidden="true">Friend</button>
-                      </div>
-                      <div class="suggested-friend">
-                        <img src="../assets/images/PLHIV Young person female_0.webp" class="img-circle">
-                        <p>Bio</p>
-                        <!-- <p>45 Followers</p> -->
-                        <button class="btn btn-primary btn-sm pull-right" data-dismiss="modal"
-                          aria-hidden="true">Friend</button>
-                      </div>
-
-                      <div class="suggested-friend">
-                        <img src="../assets/images/PLHIV Young person female_0.webp" class="img-circle">
-                        <p>Bio</p>
-                        <!-- <p>45 Followers</p> -->
-                        <button class="btn btn-primary btn-sm pull-right" data-dismiss="modal"
-                          aria-hidden="true">Friend</button>
-                      </div>
-                      <div class="suggested-friend">
-                        <img src="../assets/images/PLHIV Young person female_0.webp" class="img-circle">
-                        <p>Bio</p>
-                        <!-- <p>45 Followers</p> -->
-                        <button class="btn btn-primary btn-sm pull-right" data-dismiss="modal"
-                          aria-hidden="true">Friend</button>
-                      </div>
-                      <div class="suggested-friend">
-                        <img src="../assets/images/PLHIV Young person female_0.webp" class="img-circle">
-                        <p>Bio</p>
-                        <!-- <p>45 Followers</p> -->
-                        <button class="btn btn-primary btn-sm pull-right" data-dismiss="modal"
-                          aria-hidden="true">Friend</button>
+                        <div class="suggested-friend">
+                          <img
+                            src="../assets/images/PLHIV Young person female_0.webp"
+                            class="img-circle"
+                          />
+                          <p>Bio</p>
+                          <button
+                            class="btn btn-primary btn-sm pull-right"
+                            data-dismiss="modal"
+                            aria-hidden="true"
+                          >
+                            Friend
+                          </button>
+                        </div>
+                        <div class="suggested-friend">
+                          <img
+                            src="../assets/images/PLHIV Young person female_0.webp"
+                            class="img-circle"
+                          />
+                          <p>Bio</p>
+                          <button
+                            class="btn btn-primary btn-sm pull-right"
+                            data-dismiss="modal"
+                            aria-hidden="true"
+                          >
+                            Friend
+                          </button>
+                        </div>
+                        <div class="suggested-friend">
+                          <img
+                            src="../assets/images/PLHIV Young person female_0.webp"
+                            class="img-circle"
+                          />
+                          <p>Bio</p>
+                          <button
+                            class="btn btn-primary btn-sm pull-right"
+                            data-dismiss="modal"
+                            aria-hidden="true"
+                          >
+                            Friend
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <!-- </div> -->
-                </div>
-                <div class="add-section">
-                  <img src="../assets/images/add_img.webp">
-                </div>
-              </div>
-            </div>
-            <!--/row-->
-
-          </div>
-          <div class="col-sm-2">
-            <div class="panel panel-default">
-              <div class="list-group">
-                <div class="list-group-item suggested-friend-list">
-                  <div class="suggested-friend">
-                    <img src="../assets/images/PLHIV Young person female_0.webp" class="img-circle">
-                    <p>Bio</p>
-                    <!-- <p>45 Followers</p> -->
-                  </div>
-                  <div class="suggested-friend">
-                    <img src="../assets/images/PLHIV Young person female_0.webp" class="img-circle">
-                    <p>Bio</p>
-                    <!-- <p>45 Followers</p> -->
-                  </div>
-
-                  <div class="suggested-friend">
-                    <img src="../assets/images/PLHIV Young person female_0.webp" class="img-circle">
-                    <p>Bio</p>
-                    <!-- <p>45 Followers</p> -->
-                  </div>
-                  <div class="suggested-friend">
-                    <img src="../assets/images/PLHIV Young person female_0.webp" class="img-circle">
-                    <p>Bio</p>
-                    <!-- <p>45 Followers</p> -->
-                  </div>
-                  <div class="suggested-friend">
-                    <img src="../assets/images/PLHIV Young person female_0.webp" class="img-circle">
-                    <p>Bio</p>
-                    <!-- <p>45 Followers</p> -->
+                  <div class="add-section">
+                    <img src="../assets/images/add_img.webp" />
                   </div>
                 </div>
               </div>
-              <!-- </div> -->
             </div>
+            <div class="col-sm-2">
+              <div class="panel panel-default">
+                <div class="list-group online-user-section">
+                  <div class="list-group-item online-user-list">
+                    <div class="online-user">
+                      <ul>
+                        <li>Chat</li>
+                        <li><i class="fa fa-cog" aria-hidden="true"></i></li>
+                        <li>+<i class="fa fa-users" aria-hidden="true"></i></li>
+                        <li>
+                          +<i class="fa fa-envelope" aria-hidden="true"></i>
+                        </li>
+                      </ul>
+                    </div>
 
+                    <div class="online-user">
+                      <img
+                        src="../assets/images/PLHIV Young person female_0.webp"
+                        class="img-circle"
+                      />
+                      <p>Aabharan</p>
+                    </div>
+                    <div class="online-user">
+                      <img
+                        src="../assets/images/PLHIV Young person female_0.webp"
+                        class="img-circle"
+                      />
+                      <p>Aabhas</p>
+                    </div>
+
+                    <div class="online-user">
+                      <img
+                        src="../assets/images/PLHIV Young person female_0.webp"
+                        class="img-circle"
+                      />
+                      <p>Aabhaavannan</p>
+                    </div>
+                    <div class="online-user">
+                      <img
+                        src="../assets/images/PLHIV Young person female_0.webp"
+                        class="img-circle"
+                      />
+                      <p>Jacob</p>
+                    </div>
+                    <div class="online-user">
+                      <img
+                        src="../assets/images/PLHIV Young person female_0.webp"
+                        class="img-circle"
+                      />
+                      <p>Daarnuk</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-
-
       </div>
-      <!-- /main -->
-
     </div>
   </div>
-</div>
 
-
-<!--post modal-->
-<div id="postModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        Update Status
-      </div>
-      <div class="modal-body">
-        <form class="form center-block">
-          <div class="form-group">
-            <textarea class="form-control input-lg" autofocus="" placeholder="What do you want to share?"></textarea>
+  <div
+    id="postModal"
+    class="modal fade"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-hidden="true"
+          >
+            ×
+          </button>
+          Update Status
+        </div>
+        <div class="modal-body">
+          <form class="form center-block">
+            <div class="form-group">
+              <textarea
+                class="form-control input-lg"
+                autofocus=""
+                placeholder="What do you want to share?"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div>
+            <button
+              class="btn btn-primary btn-sm"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              Post
+            </button>
+            <ul class="pull-left list-inline">
+              <!-- <li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li>
+              <li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li>
+              <li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li> -->
+            </ul>
           </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <div>
-          <button class="btn btn-primary btn-sm" data-dismiss="modal" aria-hidden="true">Post</button>
-          <ul class="pull-left list-inline">
-            <!-- <li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li>
-            <li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li>
-            <li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li> -->
-          </ul>
         </div>
       </div>
     </div>
